@@ -25,5 +25,6 @@ public class ShoppingCart {
         for (Item item : items) {
             totalPrice += item.getTotalPrice();
         }
+        return totalPrice;
     }
 }
