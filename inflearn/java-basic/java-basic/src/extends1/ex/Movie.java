@@ -1,0 +1,21 @@
+package extends1.ex;
+
+import lombok.Getter;
+
+@Getter
+public class Movie extends Item{
+    private String director;
+    private String actor;
+
+    public Movie(String name, Integer price, String director, String actor){
+        super(name, price);
+        this.director = director;
+        this.actor = actor;
+    }
+
+    @Override
+    public void print(){
+        super.print();
+        System.out.println("movie");
+    }
+}
